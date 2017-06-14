@@ -1,7 +1,6 @@
 html, body, .jumbotron {
 	background-color: #f3f4fa;
 	background-image: url("MOkev.JPG");
-	/*image didn't appear on the website --> had to load it onto the server, but now it loads slowly*/
 	background-size: cover;
 	text-align: center;
 }
@@ -13,6 +12,7 @@ html, body, .jumbotron {
   height: 500px;
 }
 .jumbotron h2 {
+  padding-top: 125px;
   color:#ffffff;
   font-family: 'Baloo', cursive;
   font-size: 56px;
@@ -27,6 +27,28 @@ html, body, .jumbotron {
 .btn.btn-primary:hover {
   color: #732844;
   background-color: #64640a;
+}
+.row.text-center-below {
+  padding: 10px;
+}
+li {
+    display: block;
+    font-size: 17px;
+    color: white;
+    font-family: 'Baloo', cursive;
+}
+
+li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content:"\e005";
+    font-family: 'Glyphicons Halflings';
+    font-size: 17px;
+    position: relative;
+    margin-right: 10px;
+    top: 3px;
+    /*padding-right: 3px;
+    padding-top: 1px;*/
+    color: black;
 }
 /* centering is off it seems like needs to be fixed, maybe use a class to center all at once or specifically center all at the same time to avoid issues with centering being off */
 /*ul {
